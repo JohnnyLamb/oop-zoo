@@ -26,4 +26,9 @@ Animal.prototype.feed = function(){
 Animal.prototype.wakeUp = function(){
   this.awake = true;
 };
+
+Animal.prototype.sleep = function(){
+  this.awake = false;
+
+};
 module.exports = Animal;
