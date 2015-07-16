@@ -20,9 +20,10 @@ Animal.prototype.growUp = function(){
 Animal.prototype.feed = function(){
   if(this.awake === true){
     return console.log("NOM NOM NOM");
-
   }
-
 };
 
+Animal.prototype.wakeUp = function(){
+  this.awake = true;
+};
 module.exports = Animal;
