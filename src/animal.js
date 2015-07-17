@@ -17,6 +17,12 @@ Animal.prototype.growUp = function(){
   return this.age++;
 };
 
+Animal.prototype.feed = function(){
+  if(this.awake === true){
+    return console.log("NOM NOM NOM");
 
+  }
+
+};
 
 module.exports = Animal;
