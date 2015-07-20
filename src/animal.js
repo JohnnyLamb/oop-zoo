@@ -2,6 +2,7 @@ function Animal(name, age, kind){
   this.name = name;
   this.age = age;
   this.kind = kind;
+  this.awake = false;
 }
 
 Animal.prototype.oink = function(){
