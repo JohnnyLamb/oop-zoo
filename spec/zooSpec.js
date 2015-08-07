@@ -77,7 +77,8 @@ describe('Zoo', function(){
 
   describe('#removeAnimal', function(){
     it('should remove an animal from the animals array if the zoo is open', function(){
-
+      zoo.open();
+      zoo.removeAnimal());
     });
   });
 });

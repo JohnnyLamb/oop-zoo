@@ -63,9 +63,11 @@ Zoo.prototype.removeAnimal = function(animal){
   if(this.status === "open"){
       var getHere = this.animals.indexOf(animal);
       for(i = 0; i < this.animal.length; i++){
-        this.animal.splice(getHere,1);
+        if(getHere !== -1){
+          this.animal.splice(getHere,1);
+        }
       }
-  }
+    }
 };
 
 module.exports = Zoo;
